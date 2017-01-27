@@ -1,1092 +1,444 @@
-<!--
-Author: W3layouts
+
+<!--A Design by W3layouts
+Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
-<html>
-<head>
-<title>Easy Recharge a  Business Corporate Category Flat Bootstrap Responsive Website Template | Payment :: w3layouts</title>
 
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<!-- for-mobile-apps -->
+<html lang="en">
+<head>
+<title>Travel Hunt App A Mobile App Flat Bootstrap Responsive Website Template | Payment :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Easy Recharge Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //for-mobile-apps -->
-<!--fonts-->
-<link href='//fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<!--//fonts-->	
-<!-- js -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<meta name="keywords" content="Travel Hunt App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta charset utf="8">
+<!--font-awsome-css-->
+     <link rel="stylesheet" href="css/font-awesome.min.css"> 
+<!--bootstrap-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<!--custom css-->
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<!--component-css-->
+   <script src="js/jquery-2.1.4.min.js"></script>
+<!--script-->
+	<script src="js/modernizr.custom.js"></script>
+    <script src="js/bigSlide.js"></script>
+           <script>
+				$(document).ready(function() {
+				$('.menu-link').bigSlide();
+				});
+     </script>
+<!-- web-fonts -->  
+  <link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- //web-fonts -->
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+		    <script type="text/javascript">
+			    $(document).ready(function () {
+			        $('#horizontalTab').easyResponsiveTabs({
+			            type: 'default', //Types: default, vertical, accordion           
+			            width: 'auto', //auto or any width like 600px
+			            fit: true   // 100% fit in a container
+			        });
+			    });
+</script>
 
-<!-- js -->
-<!--animate-->
-<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
-<script src="js/wow.min.js"></script>
-	<script>
-		 new WOW().init();
-	</script>
-<!--//end-animate-->
-<script>
-									$(document).ready(function () {
-										//Initialize tooltips
-										$('.nav-tabs > li a[title]').tooltip();
-										
-										//Wizard
-										$('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+    </head>
+	 <div class="modal fade" id="myModalbook" role="dialog">
+			<div class="modal-dialog">
+			<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+					      
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+					<h3 class="w3ls-title book">ADD TRAVELLER DETAILS</h3>
+					<div class="main-booking">
+						<form action="payment.html" method="post">
+									<p>First Name </p>
+									<input type="text" name="First Name"  required=""/>
+									<p>Last Name </p>
+									<input type="text" name="Last Name"  required=""/>
+									<p>Your Email</p>
+									<input type="text" name="Your Email"  required=""/>
+									
+									<p>Your Phone</p>
+									<input type="text" name="Your Email"  required=""/>
+									<div class="search">
+										<input type="submit" value="Proceed To Payment">	
+									</div>									
+								</form> 
+					</div>
+				</div>
+			</div>
+		</div>
+	   </div>
 
-											var $target = $(e.target);
-										
-											if ($target.parent().hasClass('disabled')) {
-												return false;
-											}
-										});
-
-										$(".next-step").click(function (e) {
-
-											var $active = $('.wizard .nav-tabs li.active');
-											$active.next().removeClass('disabled');
-											nextTab($active);
-
-										});
-										$(".prev-step").click(function (e) {
-
-											var $active = $('.wizard .nav-tabs li.active');
-											prevTab($active);
-
-										});
-									});
-
-									function nextTab(elem) {
-										$(elem).next().find('a[data-toggle="tab"]').click();
-									}
-									function prevTab(elem) {
-										$(elem).prev().find('a[data-toggle="tab"]').click();
-									}
-								</script>
-</head>
 <body>
+<div class="body-back">
+	<div class="masthead pdng-stn1">
+		<div id="menu" class="panel" role="navigation">
+			<div class="wrap-content">
+				<div class="profile-menu text-center">
+					<img class="border-effect" src="images/logo.png" alt=" ">
+						<h3>MENU</h3>
 
-<div class="banner page-head">
-	<div class="header">	
-			<div class="logo">
-			   <h1><a href="index.html"><i><img src="images/cell.png" alt=" " /></i>Easy Recharge</a></h1>
-			</div>
-			<div class="top-nav">
-				<span class="menu"><img src="images/menu.png" alt=" " /></span>
-				<ul class="nav1">
-					<li><a href="#" data-toggle="modal" data-target="#myModal">Mobile</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal2">datacard</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal1">DTH</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal3">landline</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal4">login</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal5">Signup</a></li>
-				</ul>
-						<!-- script-for-menu -->
-						 <script>
-						   $( "span.menu" ).click(function() {
-							 $( "ul.nav1" ).slideToggle( 300, function() {
-							 // Animation complete.
-							  });
-							 });
-						</script>
-						<!-- /script-for-menu -->
-			</div>
-			<!-- start search-->
-				    <div class="search-box">
-					    <div id="sb-search" class="sb-search">
-							<form>
-								<input class="sb-search-input" placeholder="Enter your search item..." type="search" name="search" id="search">
-								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search"> </span>
-							</form>
+						<div class="pro-menu">
+							<div class="logo">
+								<li><a class=" link link--yaku  active" href="main.html"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
+								<li><a class=" link link--yaku" href="about.html"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
+								<li><a class=" link link--yaku" href="short-codes.html"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a></li>
+								<li><a class=" link link--yaku" href="destination.html"><span>D</span><span>e</span><span>s</span><span>t</span><span>i</span><span>n</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></a></li>
+								<li><a class=" link link--yaku" href="contact.html"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
+							</div>
+				
+
 						</div>
-				    </div>
-					<!-- search-scripts -->
-					<script src="js/classie.js"></script>
-					<script src="js/uisearch.js"></script>
-						<script>
-							new UISearch( document.getElementById( 'sb-search' ) );
-						</script>
-				<!-- //search-scripts -->
-			<div class="clearfix"> </div>
-	</div>
-	<div class="container">
-		<div class="profile_details">		
-						<ul>
-							<li class="dropdown profile_details_drop">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-									<div class="profile_img">	
-										<span style="background:url(images/1.png) no-repeat center"> </span> 
-										 <div class="user-name">
-											<p>Your Profile</p>
-										 </div>
-										 <i class="lnr lnr-chevron-down"></i>
-										 <i class="lnr lnr-chevron-up"></i>
-										<div class="clearfix"></div>	
-									</div>	
-								</a>
-								<ul class="dropdown-menu drp-mnu">
-									<li> <a href="#" data-toggle="modal" data-target="#myModal6"> Edit</a> </li> 
-									<li> <a href="settings.html"> View Profile</a> </li>
-									<li> <a href="orders.html">Your orders</a> </li>
-																		
-									<li> <a href="#" data-toggle="modal" data-target="#myModal4"> Logout</a> </li>
-								</ul>
-							</li>
-							<div class="clearfix"> </div>
-						</ul>
+				</div>
+			</div>
 		</div>
-			<div class="clearfix"> </div>
-	</div>
-	<!-- edit -->
-			<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-							<div class="edit-pro">
-							
-								<form>
-									<div class="edit-for-sett">				
-										<h5>name</h5>													
-											<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-										<h5>Email address</h5>													
-											<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-										<h5>mobile no.</h5>													
-											<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-										<h5>date of birth</h5>	
-											<input type="date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">
-										<h5>Gender</h5>	
-										<div class="swit-radio-thre">								
-											<div class="check_box_thre"> <div class="radio_thre"> <label><input type="radio" name="radio" checked=""><i></i>MALE</label> </div></div>
-											<div class="check_box_thre"> <div class="radio_thre"> <label><input type="radio" name="radio"><i></i>FEMALE</label> </div></div>	
-											<div class="clearfix"></div>
-										</div>
-										<input type="submit" value="UPDATE">										
-									</div>	
+		<div class="phone-box wrap push" id="home">
+			<div class="menu-notify">
+				<div class="profile-left">
+					<a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
+				</div>
+				<div class="Profile-mid">
+					<h5 class="pro-link"><a href="main.html">Travel Hunt</a></h5>
+				</div>
+				<div class="Profile-right">
+					<a href="#small-dialog" class="sign-in popup-top-anim"> <i class="fa fa-user"></i></a> 
+					<!-- modal -->
+					<div id="small-dialog" class="mfp-hide">
+						<div class="login-modal"> 	
+							<div class="booking-info">
+							   <h3><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
+								
+							</div>
+							<div class="login-form">
+								<form action="#" method="post">
+									<p>User Name </p>
+									<input type="text" name="Name" required=""/>
+									<p>User Password</p>
+									<input type="password" name="Password" required=""/>	 
+									<div class="wthree-text"> 
+										<ul> 
+											<li>
+												<input type="checkbox" id="brand" value="">
+												<label for="brand"><span></span> Remember me ?</label>  
+											</li>
+											<li> <a href="#">Forgot password?</a> </li>
+										</ul>
+										<div class="clear"> </div>
+									</div> 
+									<input type="submit" value="Sign In">		
 								</form>
-							</div>
+								<p>Don’t have an account ?<a href="#small-dialog1" class="sign-in popup-top-anim"> Sign Up</a></p>
+							</div> 
 						</div>
 					</div>
+					<!-- //modal --> 
+					<!-- modal-two -->
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="login-modal">  
+							<div class="booking-info">
+							   <h3><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
+								
+							</div>
+							<div class="login-form signup-form">
+								<form action="#" method="post">
+									<p>User Name </p>
+									<input type="text" name="Name"  required=""/>
+									<p>User Email </p>
+									<input type="text" name="Email"  required=""/>
+									<p>User Password</p>
+									<input type="password" name="Password" placeholder="" required=""/>	
+									<div class="wthree-text"> 
+										<input type="checkbox" id="brand1" value="">
+										<label for="brand1"><span></span>I accept the terms of use</label> 
+									</div>
+									<input type="submit" value="Sign Up">		
+								</form> 
+							</div> 
+						</div>
+					</div>
+					<!-- //modal-two --> 
+					
+				</div>
+				<div class="clearfix"></div>
+			</div> 
+<!-- banner -->
+   <div class="details-grid pay">
+				<div class="details-shade ">
+						<div class="details-right">
+							<img src="images/logo.png" alt=" ">
+							<h3>WELCOME TO</h3>
+							<h4>You’re going to like us.</h4>
+								
+							
+						</div>
+						<div class="banner_search">
+								<form action="#" method="post">
+									<input type="search" name="search" value="Where to go ?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Where to go ?';}" required="">
+									<input type="submit" value=" ">
+								</form>
+						</div> 
+
+				
 				</div>
 			</div>
-		<!-- edit -->
-</div>
+		<div class="w3agile banner-bottom">
+			   <ul>
+				    <li><a href="flight.html" class="hvr-radial-out"><i class="fa fa-plane" aria-hidden="true"></i></a><h6>Flight</h6></li>
+					<li><a href="train.html" class="hvr-radial-out"><i class="fa fa-train" aria-hidden="true"></i></a><h6>Train</h6></li>
+					<li><a href="bus.html" class="hvr-radial-out"><i class="fa fa-bus" aria-hidden="true"></i></a><h6>Bus</h6></li>
+					<li><a href="hotel.html" class="hvr-radial-out"><i class="fa fa-bed" aria-hidden="true"></i></a><h6>Hotels</h6></li>
+				</ul>
+			</div>
+	<!-- //banner -->
+	<!--payment--> 
+            <div class="w3agile single-bus">
+			    <div class="payment-left">
+				<div class="confirm-details">
+					<h3>Confirm Your Contact Details</h3>
+					<input type="text" value="Email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email address';}">
+					<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}">
+					<p><i>Your number will be used for transaction confirmations &amp; none of those painful promotions.</i></p>
+					<div class="c-lang">
+						<input type="checkbox" id="c1" name="cc">
+						<label class="lang">International number?</label>
+					</div>
+					<div class="c-lang">
+						<input type="checkbox" id="c1" name="cc">
+						<label class="lang">I want to add trip insurance to my booking for $ 249 per person.</label>
+					</div>
+				</div>
+				<div class="payment-options">
+					<h3>payment-options</h3>
+					<div class="tabs-box">
+					<ul class="tabs-menu booking-menu">
+						<li><a href="#tab1">Debit/Credit Card</a></li>
+						<li><a href="#tab2">Credit Card EMI</a></li>
+						<li><a href="#tab3">Net Banking</a></li>
+						<li><a href="#tab4">PayPal</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+					<div class="tab-grids event-tab-grids">
+						<div id="tab1" class="tab-grid">
+							<img src="images/payment.png" alt="payment">
+							<input type="text" class="payment" value="Enter Your Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Card Number';}">
+							<input type="text" class="payment" value="Your Name On Card" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your Name On Card';}">
+							<p>Expiry:<select class="month">
+														<option value="">Select</option>
+														<option value="01">Jan</option>
+														<option value="02">Feb</option>
+														<option value="03">Mar</option>
+														<option value="04">Apr</option>
+														<option value="05">May</option>
+														<option value="06">Jun</option>
+														<option value="07">Jul</option>
+														<option value="08">Aug</option>
+														<option value="09">Sep</option>
+														<option value="10">Oct</option>
+														<option value="11">Nov</option>
+														<option value="12">Dec</option>
+													</select>
+													<select class="year">
+														<option value="">Year</option>
+														<option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option><option value="2031">2031</option><option value="2032">2032</option><option value="2033">2033</option><option value="2034">2034</option><option value="2035">2035</option><option value="2036">2036</option><option value="2037">2037</option><option value="2038">2038</option><option value="2039">2039</option><option value="2040">2040</option><option value="2041">2041</option><option value="2042">2042</option><option value="2043">2043</option><option value="2044">2044</option><option value="2045">2045</option><option value="2046">2046</option><option value="2047">2047</option><option value="2048">2048</option><option value="2049">2049</option><option value="2050">2050</option><option value="2051">2051</option><option value="2052">2052</option><option value="2053">2053</option><option value="2054">2054</option><option value="2055">2055</option><option value="2056">2056</option><option value="2057">2057</option><option value="2058">2058</option><option value="2059">2059</option><option value="2060">2060</option><option value="2061">2061</option><option value="2062">2062</option><option value="2063">2063</option><option value="2064">2064</option><option value="2065">2065</option><option value="2066">2066</option><option value="2067">2067</option><option value="2068">2068</option><option value="2069">2069</option><option value="2070">2070</option><option value="2071">2071</option><option value="2072">2072</option><option value="2073">2073</option><option value="2074">2074</option></select>
+														<input type="text" class="cvv" value="cvv" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'cvv';}">
+														</p>
+														<input type="submit" class="go-to-pay" value="make payment">
+						</div>
+						<div id="tab2" class="tab-grid" style="display: none;">
+							<p>Currently available for ICICI Bank Credit Cardholders only.</p>
+							<input type="text" class="payment" value="Enter Your Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Card Number';}">
+						</div>
+						<div id="tab3" class="tab-grid" style="display: none;">
+							<h4>Net Banking</h4>
+							<div class="c-lang">
+					<input type="checkbox" id="c1" name="cc">
+					<label class="lang">ICICI bank</label>
+				</div>
+				<div class="c-lang">
+					<input type="checkbox" id="c1" name="cc">
+					<label class="lang">HDFC bank</label>
+				</div>
+				<div class="c-lang">
+					<input type="checkbox" id="c1" name="cc">
+					<label class="lang">SBI bank</label>
+				</div>
+				<div class="c-lang">
+					<input type="checkbox" id="c1" name="cc">
+					<label class="lang">IDBI bank</label>
+				</div>
+				<div class="c-lang">
+					<input type="checkbox" id="c1" name="cc">
+					<label class="lang">AXIS bank</label>
+				</div>
+				<div class="c-lang">
+					<input type="checkbox" id="c1" name="cc">
+					<label class="lang">KOTAK bank</label>
+				</div>
+							<p>Select Other Banks :<select class="year"><option value="">=== Other Banks ===</option><option value="ALB-NA">Allahabad Bank NetBanking</option><option value="ADB-NA">Andhra Bank</option><option value="BBK-NA">Bank of Bahrain and Kuwait NetBanking</option><option value="BBC-NA">Bank of Baroda Corporate NetBanking</option><option value="BBR-NA">Bank of Baroda Retail NetBanking</option><option value="BOI-NA">Bank of India NetBanking</option><option value="BOM-NA">Bank of Maharashtra NetBanking</option><option value="CSB-NA">Catholic Syrian Bank NetBanking</option><option value="CBI-NA">Central Bank of India</option><option value="CUB-NA">City Union Bank NetBanking</option><option value="CRP-NA">Corporation Bank</option><option value="DBK-NA">Deutsche Bank NetBanking</option><option value="DCB-NA">Development Credit Bank</option><option value="DC2-NA">Development Credit Bank - Corporate</option><option value="DLB-NA">Dhanlaxmi Bank NetBanking</option><option value="FBK-NA">Federal Bank NetBanking</option><option value="IDS-NA">Indusind Bank NetBanking</option><option value="IOB-NA">Indian Overseas Bank</option><option value="ING-NA">ING Vysya Bank (now Kotak)</option><option value="JKB-NA">Jammu and Kashmir NetBanking</option><option value="JSB-NA">Janata Sahakari Bank Limited</option><option value="KBL-NA">Karnataka Bank NetBanking</option><option value="KVB-NA">Karur Vysya Bank NetBanking</option><option value="LVR-NA">Lakshmi Vilas Bank NetBanking</option><option value="OBC-NA">Oriental Bank of Commerce NetBanking</option><option value="CPN-NA">PNB Corporate NetBanking</option><option value="PNB-NA">PNB NetBanking</option><option value="RSD-DIRECT">Rajasthan State Co-operative Bank-Debit Card</option><option value="RBS-NA">RBS (The Royal Bank of Scotland)</option><option value="SWB-NA">Saraswat Bank NetBanking</option><option value="SBJ-NA">SB Bikaner and Jaipur NetBanking</option><option value="SBH-NA">SB Hyderabad NetBanking</option><option value="SBM-NA">SB Mysore NetBanking</option><option value="SBT-NA">SB Travancore NetBanking</option><option value="SVC-NA">Shamrao Vitthal Co-operative Bank</option><option value="SIB-NA">South Indian Bank NetBanking</option><option value="SBP-NA">State Bank of Patiala NetBanking</option><option value="SYD-NA">Syndicate Bank NetBanking</option><option value="TNC-NA">Tamil Nadu State Co-operative Bank NetBanking</option><option value="UCO-NA">UCO Bank NetBanking</option><option value="UBI-NA">Union Bank NetBanking</option><option value="UNI-NA">United Bank of India NetBanking</option><option value="VJB-NA">Vijaya Bank NetBanking</option></select></p>
+						</div>
+						<div id="tab4" class="tab-grid" style="display: none;">
+							<div class="row">
+                        <div class="col-md-6">
+                            <img class="pp-img" src="images/paypal.png" alt="Image Alternative text" title="Image Title">
+                            <p>Important: You will be redirected to PayPal's website to securely complete your payment.</p><a class="btn btn-primary">Checkout via Paypal</a>	
+                        </div>
+                        <div class="col-md-6">
+                            <form class="cc-form">
+                                <div class="clearfix">
+                                    <div class="form-group form-group-cc-number">
+                                        <label>Card Number</label>
+                                        <input class="form-control" placeholder="xxxx xxxx xxxx xxxx" type="text"><span class="cc-card-icon"></span>
+                                    </div>
+                                    <div class="form-group form-group-cc-cvc">
+                                        <label>CVV</label>
+                                        <input class="form-control" placeholder="xxxx" type="text">
+                                    </div>
+                                </div>
+                                <div class="clearfix">
+                                    <div class="form-group form-group-cc-name">
+                                        <label>Card Holder Name</label>
+                                        <input class="form-control" type="text">
+                                    </div>
+                                    <div class="form-group form-group-cc-date">
+                                        <label>Valid Thru</label>
+                                        <input class="form-control" placeholder="mm/yy" type="text">
+                                    </div>
+                                </div>
+                                <div class="checkbox checkbox-small">
+                                    <label>
+                                        <input class="i-check" type="checkbox" checked="">Add to My Cards</label>
+                                </div>
+                                <input class="btn btn-primary" type="submit" value="Proceed Payment">
+                            </form>
+                        </div>
+                    </div>
+						</div>
+							</div>			
+					<div class="clearfix"> </div>
+				</div>
+	<!--start-carrer-->
+	<!----- Comman-js-files ----->
+		<script>
+			$(document).ready(function() {
+				$("#tab2").hide();
+				$("#tab3").hide();
+				$("#tab4").hide();
+				$(".tabs-menu a").click(function(event){
+					event.preventDefault();
+					var tab=$(this).attr("href");
+					$(".tab-grid").not(tab).css("display","none");
+					$(tab).fadeIn("slow");
+				});
+			});
+		</script>
 
-<div class="banner-bottom">
-	<div class="container">
-		<div class="view_plans">
-			<h4 class="view_title">Select Payment Method</h4>
-			<div class="section_room_single">
-				<h3>Transaction ID : 1405980917</h3>
+				</div>
+			</div>
+            </div>
+	<!-- //payment-->
+    <!--/footer-->
+    <div class="w3agile footer">
+			<div class="col-md-3 w3agile_footer_grid">
+				<h3>About Us</h3>
+				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+					voluptatibus.</p>
+				<h3 class="logo"><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
+			</div>
+			<div class="col-md-2 w3agile_footer_grid">	
+				<h3>Links</h3>
+				<ul>
+					<li><a href="main.html">Home</a></li>
+					<li><a href="short-codes.html">Services</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Mail Us</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4 w3agile_footer_grid">
+				<h3>Twitter Posts</h3>
+				  <ul class="w3agile_footer_grid_list">
+					  <li>Ut aut reiciendis voluptatibus maiores alias, ut aut reiciendis.
+						<span><i class="fa fa-twitter" aria-hidden="true"></i> 02 days ago</span></li>
+					  <li>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+						voluptatibus.<span><i class="fa fa-twitter" aria-hidden="true"></i> 03 days ago</span></li>
+				  </ul>
+			</div>
+			<div class="col-md-3 w3agile_footer_grid">
+				<h3>Newsletter</h3>
+				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.</p>
+				<ul class="social">
+					<form action="#" method="post">			 
+					  <input type="text" name="Email" placeholder="Enter Email..." required="">
+
+					 <input type="submit" value="Submit">
+					 <div class="clearfix"></div>
+				 </form>
+				</ul>
 			</div>
 			<div class="clearfix"> </div>
-			<div id="verticalTab" class="resp-vtabs" style="display: block; width: 100%; margin: 0px;">
-					<div class="col-md-3 pay-left">
-						<ul class="resp-tabs-list">
-							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab">Debit Card</li>
-							<li class="resp-tab-item" aria-controls="tab_item-1" role="tab">Credit Card</li>
-							<li class="resp-tab-item" aria-controls="tab_item-2" role="tab">Net Banking</li>
-							<li class="resp-tab-item" aria-controls="tab_item-3" role="tab">ATM</li>
-							<li class="resp-tab-item" aria-controls="tab_item-4" role="tab">IMPS</li>
-						</ul>
-					</div>
-					<div class="col-md-9 pay-right">
-						<div class="resp-tabs-container">
-							<h2 class="resp-accordion" role="tab" aria-controls="tab_item-0"></h2>
-								<div class="resp-tab-content" aria-labelledby="tab_item-0">
-									<div class="vertical_post">
-										<form>
-											<h5>Enter Debit Card Number</h5>
-											<input type="text" value=" " class="card_logo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-											<div class="transaction">
-												<div class="tab-form-left user-form">
-													<h5>EXPIRATION</h5>
-														<ul>
-															<li>
-																<input type="number" class="text_box" value="6" min="1">	
-															</li>
-															<li>
-																<input type="number" class="text_box" value="1988" min="1">	
-															</li>	
-														</ul>
-												</div>
-												<div class="tab-form-right user-form-rt">
-													<h5>CVV NUMBER</h5>													
-													<input type="text" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
-												</div>
-												<div class="clearfix"></div>
-											</div>
-											<div class="single-check">
-												<input type="checkbox"  id="brand" value="">
-												<label for="brand"><span></span>Save this card for faster checkout.</label>
-												
-											</div>
-											<input type="submit" value="PAY NOW">
-										</form>
-									</div>
-								</div>
-							<h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"></h2>
-								<div class="resp-tab-content" aria-labelledby="tab_item-1">
-									<div class="vertical_post">
-										<form>
-											<h5>Enter Credit Card Number</h5>
-											<input type="text" value=" " class="card_logo" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-											<div class="transaction">
-												<div class="tab-form-left user-form">
-													<h5>EXPIRATION</h5>
-														<ul>
-															<li>
-																<input type="number" class="text_box" value="6" min="1">	
-															</li>
-															<li>
-																<input type="number" class="text_box" value="1988" min="1">	
-															</li>	
-														</ul>
-												</div>
-												<div class="tab-form-right user-form-rt">
-													<h5>CVV NUMBER</h5>													
-													<input type="text" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
-												</div>
-												<div class="clearfix"></div>
-											</div>
-											<div class="single-check">
-												<input type="checkbox"  id="brand4" value="">
-												<label for="brand4"><span></span>Save this card for faster checkout.</label>
-												
-											</div>
-											<input type="submit" value="PAY NOW">
-										</form>
-									</div>
-								</div>
-							<h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"></h2>
-							<div class="new_posts resp-tab-content" aria-labelledby="tab_item-2">
-								<div class="vertical_post">
-									<form>
-										<h5>Select From Popular Banks</h5>
-										<div class="swit-radio">								
-											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio" checked=""><i></i>Syndicate Bank</label> </div></div>
-											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>Bank of Baroda</label> </div></div>
-											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>Canara Bank</label> </div></div>	
-											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>ICICI Bank</label> </div></div>	
-											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>State Bank Of India</label> </div></div>		
-											<div class="clearfix"></div>
-										</div>
-										<h5>Or SELECT OTHER BANK</h5>
-										<div class="section_room_pay">
-											<select id="country" onchange="change_country(this.value)" class="frm-field required">
-												<option value="null">Indian Overseas Bank</option>
-												<option value="null">HDFC Bank</option>         
-												<option value="AX">Syndicate Bank</option>
-												<option value="AX">Deutsche Bank</option>
-												<option value="AX">Indian Bank</option>
-												<option value="AX">ING Vysya Bank</option>
-											</select>
-										</div>
-										<input type="submit" value="PAY NOW">
-									</form>
-								</div>
-							</div>
-							<h2 class="resp-accordion" role="tab" aria-controls="tab_item-3"></h2>
-							<div class="new_posts resp-tab-content" aria-labelledby="tab_item-3">
-								<div class="vertical_post">
-									<form>
-										<h5>Select From Popular Banks</h5>
-										<div class="swit-radio">								
-											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio" checked=""><i></i>Syndicate Bank</label> </div></div>
-											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>Bank of Baroda</label> </div></div>
-											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>Canara Bank</label> </div></div>	
-											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>ICICI Bank</label> </div></div>	
-											<div class="check_box_one"> <div class="radio_one"> <label><input type="radio" name="radio"><i></i>State Bank Of India</label> </div></div>		
-											<div class="clearfix"></div>
-										</div>
-										<h5>Or SELECT OTHER BANk</h5>
-										<div class="section_room_pay">
-											<select id="country" onchange="change_country(this.value)" class="frm-field required">
-												<option value="null">Indian Overseas Bank</option>
-												<option value="null">HDFC Bank</option>         
-												<option value="AX">Syndicate Bank</option>
-												<option value="AX">Deutsche Bank</option>
-												<option value="AX">Indian Bank</option>
-												<option value="AX">ING Vysya Bank</option>
-											</select>
-										</div>
-										<input type="submit" value="PAY NOW">
-									</form>
-								</div>
-							</div>	  
-							  <h2 class="resp-accordion" role="tab" aria-controls="tab_item-4"></h2><div class="new_posts resp-tab-content" aria-labelledby="tab_item-3">
-								<div class="vertical_post">
-										<form>
-											<h5>Mobile Number</h5>
-											<input type="text" value=" " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-											<div class="transaction">
-												<div class="tab-form-left user-form">
-													<h5>MMID</h5>
-														<ul>
-															<li class="mmid-grid">
-																<input type="text" value=" " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-															</li>
-														</ul>
-												</div>
-												<div class="tab-form-right user-form-rt">
-													<h5>OTP</h5>													
-													<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
-												</div>
-												<div class="clearfix"></div>
-											</div>
-											<div class="single-check">
-												<input type="checkbox"  id="brand1" value="">
-												<label for="brand1"><span></span>Save this card for faster checkout.</label>
-												
-											</div>
-											<input type="submit" value="PAY NOW">
-										</form>
-									</div>
-							</div>	           
-						</div>
-					</div>
-					<div class="clearfix"></div>
-					<script src="js/easyResponsiveTabs.js"></script>
-						<script type="text/javascript">
-							$(document).ready(function () {
-								$('#horizontalTab').easyResponsiveTabs({
-									type: 'default', //Types: default, vertical, accordion           
-									width: 'auto', //auto or any width like 600px
-									fit: true,   // 100% fit in a container
-									closed: 'accordion', // Start closed if in accordion view
-									activate: function(event) { // Callback function if tab is switched
-										var $tab = $(this);
-										var $info = $('#tabInfo');
-										var $name = $('span', $info);
-
-										$name.text($tab.text());
-
-										$info.show();
-									}
-								});
-
-								$('#verticalTab').easyResponsiveTabs({
-									type: 'vertical',
-									width: 'auto',
-									fit: true
-								});
-							});
-						</script>
-			</div>
 		</div>
+		<div class="w3agile agileinfo_copy_right">
+			<div class="agileinfo_copy_right_left">
+				<p>© 2016 Travel Hunt. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+			</div>
+			<div class="agileinfo_copy_right_right">
+				<ul class="social">
+					<li><a class="social-linkedin" href="#">
+						<i></i>
+						<div class="tooltip"><span>Facebook</span></div>
+						</a></li>
+					<li><a class="social-twitter" href="#">
+						<i></i>
+						<div class="tooltip"><span>Twitter</span></div>
+						</a></li>
+					<li><a class="social-google" href="#">
+						<i></i>
+						<div class="tooltip"><span>Google+</span></div>
+						</a></li>
+					<li><a class="social-facebook" href="#">
+						<i></i>
+						<div class="tooltip"><span>Pinterest</span></div>
+						</a></li>
+					<li><a class="social-instagram" href="#">
+						<i></i>
+						<div class="tooltip"><span>Instagram</span></div>
+						</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+	</div>
+	<!--/footer-->
 	</div>
 </div>
-<!-- mobile -->
-			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-								<section>
-									<div class="wizard">
-										<div class="wizard-inner">
-											<ul class="nav nav-tabs" role="tablist">
-												<li role="presentation" class="active">
-													<a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-folder-open"></i>
-														</span>
-													</a>
-												</li>
 
-												<li role="presentation" class="disabled">
-													<a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-pencil"></i>
-														</span>
-													</a>
-												</li>
-												<li role="presentation" class="disabled">
-													<a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-picture"></i>
-														</span>
-													</a>
-												</li>
-												<li role="presentation" class="disabled">
-													<a href="#step4" data-toggle="tab" aria-controls="step4" role="tab" title="Step 4">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-picture"></i>
-														</span>
-													</a>
-												</li>
-												<li role="presentation" class="disabled">
-													<a href="#step5" data-toggle="tab" aria-controls="step5" role="tab" title="Step 5">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-picture"></i>
-														</span>
-													</a>
-												</li>
-												<li role="presentation" class="disabled">
-													<a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-ok"></i>
-														</span>
-													</a>
-												</li>
-											</ul>
-										</div>
-
-										<form role="form">
-											<div class="tab-content">
-												<div class="tab-pane active" role="tabpanel" id="step1">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/mobile.png" alt="" />
-														</div>
-														<div class="mobile-right">
-															<h4>Enter your mobile number</h4>
-															<label>+91</label><input type="text" class="mobile-text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-														</div>
-														
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-primary next-step">Next</button></li>
-													</ul>
-												</div>
-												<div class="tab-pane" role="tabpanel" id="step2">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/mobile.png" alt="" />
-														</div>
-														<div class="mobile-right ">
-															<h4>Prepaid or Postpaid?</h4>
-															<div class="radio-btns">
-																<div class="swit">								
-																	<div class="check_box"> 
-																		<img src="images/card.png" alt="" />
-																		<div class="clearfix"></div>
-																		<div class="radio"> 
-																			<label>
-																				<input type="radio" name="radio" checked=""><i></i>Prepaid
-																			</label> 
-																		</div>
-																	</div>
-																	<div class="check_box"> 
-																		<img src="images/card.png" alt="" />
-																		<div class="clearfix"></div>
-																		<div class="radio"> 
-																			<label>
-																				<input type="radio" name="radio"><i></i>Postpaid
-																			</label> 
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-default prev-step">Previous</button></li>
-														<li><button type="button" class="mob-btn btn btn-primary next-step">Next</button></li>
-													</ul>
-												</div>
-												<div class="tab-pane" role="tabpanel" id="step3">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/mobile.png" alt="" />
-														</div>
-														<div class="mobile-right ">
-															<h4>Which operator?</h4>
-															<ul class="rchge-icons">
-																<li><a href="#">Airtel</a></li>
-																<li><a href="#">Aircel</a></li>
-																<li><a href="#">Bsnl</a></li>
-																<li><a href="#">Idea</a></li>
-																<li><a href="#">Vodafone</a></li>
-																<li><a href="#">Reliance</a></li>
-																<li><a href="#">Uninor</a></li>
-															</ul>
-															<div class="section_room">
-																<select id="country" onchange="change_country(this.value)" class="frm-field required">
-																	<option value="null">Airtel</option>
-																	<option value="null">Aircel</option>         
-																	<option value="AX">Bsnl</option>
-																	<option value="AX">Idea</option>
-																	<option value="AX">Tata Docomo</option>
-																	<option value="AX">Reliance</option>
-																	<option value="AX">Tata Indicom</option>
-																	<option value="AX">Uninor</option>
-																	<option value="AX">Vodafone</option>
-																	<option value="AX">MTS</option>
-																</select>
-															</div>	
-														</div>
-														
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-default prev-step">Previous</button></li>
-														<li><button type="button" class="mob-btn btn btn-primary btn-info-full next-step">Next</button></li>
-													</ul>
-												</div>
-												<div class="tab-pane" role="tabpanel" id="step4">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/mobile.png" alt="" />
-														</div>
-														<div class="mobile-right ">
-															<h4>Which Circle?</h4>
-															<div class="map-image">
-																<img src="images/map.png" alt="" />
-															</div>
-															<div class="section_room">
-																<select id="country" onchange="change_country(this.value)" class="frm-field required">
-																	<option value="null">Andhra Pradesh</option>
-																	<option value="null">Assam</option>         
-																	<option value="AX">Bihar</option>
-																	<option value="AX">Chennai</option>
-																	<option value="AX">Delhi</option>
-																	<option value="AX">Gujarat</option>
-																	<option value="AX">Haryana </option>
-																	<option value="AX">Himachal Pradesh</option>
-																	<option value="AX">Karnataka</option>
-																	<option value="AX">Madhya Pradesh</option>
-																	<option value="AX">Mumbai</option>
-																	<option value="AX">Tamil Nadu</option>
-																	<option value="AX">Uttar Pradesh</option>
-																</select>
-															</div>	
-														</div>
-														
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-default prev-step">Previous</button></li>
-														<li><button type="button" class="mob-btn btn btn-primary btn-info-full next-step">Next</button></li>
-													</ul>
-												</div>
-												<div class="tab-pane" role="tabpanel" id="step5">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/mobile.png" alt="" />
-														</div>
-														<div class="mobile-right ">
-															<h4>How Much To Recharge?</h4>
-															<div class="mobile-rchge">
-																<input type="text" value="10" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '10';}" required="">	
-															</div>
-															<div class="mobile-rchge">
-																<a href="single.html">VIEW PLANS</a>
-															</div>
-															<div class="clearfix"></div>
-														</div>
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-default prev-step">Previous</button></li>
-														<li><button type="button" class="mob-btn btn btn-primary btn-info-full" data-dismiss="modal">Finish</button></li>
-													</ul>
-												</div>	
-												<div class="clearfix"></div>
-											</div>
-										</form>
-									</div>
-								</section>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //mobile -->
-			<!-- Dth -->
-			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-								<section>
-									<div class="wizard">
-										<div class="wizard-inner">
-											<ul class="nav nav-tabs" role="tablist">
-												<li role="presentation" class="active">
-													<a href="#step6" data-toggle="tab" aria-controls="step6" role="tab" title="Step 6">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-folder-open"></i>
-														</span>
-													</a>
-												</li>
-												<li role="presentation" class="disabled">
-													<a href="#step7" data-toggle="tab" aria-controls="step7" role="tab" title="Step 7">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-pencil"></i>
-														</span>
-													</a>
-												</li>
-												<li role="presentation" class="disabled">
-													<a href="#step8" data-toggle="tab" aria-controls="step8" role="tab" title="Step 8">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-picture"></i>
-														</span>
-													</a>
-												</li>
-												
-											</ul>
-										</div>
-										<form role="form">
-											<div class="tab-content">
-												<div class="tab-pane active" role="tabpanel" id="step6">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/dth.png" alt="" />
-														</div>
-														<div class="mobile-right ">
-															<h4>Pay your DTH bill. Which operator?</h4>
-															<div class="section_room">
-																<select id="country" onchange="change_country(this.value)" class="frm-field required">
-																	<option value="null">Select DTH Operator</option>
-																	<option value="null">Dish TV</option>  
-																	<option value="null">Sun Direct</option> 
-																	<option value="AX">Reliance</option>
-																	<option value="AX">Airtel</option>
-																</select>
-															</div>
-														</div>
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-primary next-step">Next</button></li>
-													</ul>
-												</div>
-												<div class="tab-pane" role="tabpanel" id="step7">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/dth.png" alt="" />
-														</div>
-														<div class="mobile-right">
-															<h4>What's your DTH Number?</h4>
-															<div class="dth-rchge">
-																<input type="text" value="Enter Smart Card Number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Smart Card Number';}" required="">	
-															</div>
-														</div>
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-default prev-step">Previous</button></li>
-														<li><button type="button" class="mob-btn btn btn-primary next-step">Next</button></li>
-													</ul>
-												</div>
-												<div class="tab-pane" role="tabpanel" id="step8">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/dth.png" alt="" />
-														</div>
-														<div class="mobile-right ">
-															<h4>How Much To Recharge?</h4>
-															<div class="dth-rchge">
-																<input type="text" value="100" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '100';}" required="">	
-															</div>
-														</div>
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-default prev-step">Previous</button></li>
-														<li><button type="button" class="mob-btn btn btn-primary btn-info-full" data-dismiss="modal">Finish</button></li>
-													</ul>
-												</div>
-												<div class="clearfix"></div>
-											</div>
-										</form>
-									</div>
-								</section>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //Dth -->
-			<!-- datacard -->
-			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-								<section>
-									<div class="wizard">
-										<div class="wizard-inner">
-											<ul class="nav nav-tabs" role="tablist">
-												<li role="presentation" class="active">
-													<a href="#step9" data-toggle="tab" aria-controls="step9" role="tab" title="Step 9">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-folder-open"></i>
-														</span>
-													</a>
-												</li>
-												<li role="presentation" class="disabled">
-													<a href="#step10" data-toggle="tab" aria-controls="step10" role="tab" title="Step 10">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-pencil"></i>
-														</span>
-													</a>
-												</li>
-												<li role="presentation" class="disabled">
-													<a href="#step11" data-toggle="tab" aria-controls="step11" role="tab" title="Step 11">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-picture"></i>
-														</span>
-													</a>
-												</li>
-												
-											</ul>
-										</div>
-										<form role="form">
-											<div class="tab-content">
-												<div class="tab-pane active" role="tabpanel" id="step9">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/usb.png" alt="" />
-														</div>
-														<div class="mobile-right ">
-															<h4>Enter your data card number</h4>
-															<label>+91</label><input type="text" class="mobile-text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-															
-														</div>
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-primary next-step">Next</button></li>
-													</ul>
-												</div>
-												<div class="tab-pane" role="tabpanel" id="step10">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/usb.png" alt="" />
-														</div>
-														<div class="mobile-right ">
-															<h4>Which operator?</h4>
-															<ul class="rchge-icons">
-																<li><a href="#">Airtel</a></li>
-																<li><a href="#">Aircel</a></li>
-																<li><a href="#">Bsnl</a></li>
-																<li><a href="#">Idea</a></li>
-																<li><a href="#">Vodafone</a></li>
-																<li><a href="#">Reliance</a></li>
-																<li><a href="#">Uninor</a></li>
-															</ul>
-															<div class="section_room">
-																<select id="country" onchange="change_country(this.value)" class="frm-field required">
-																	<option value="null">Airtel</option>
-																	<option value="null">Aircel</option>         
-																	<option value="AX">Bsnl</option>
-																	<option value="AX">Idea</option>
-																	<option value="AX">Tata Docomo</option>
-																	<option value="AX">Reliance</option>
-																	<option value="AX">Tata Indicom</option>
-																	<option value="AX">Uninor</option>
-																	<option value="AX">Vodafone</option>
-																	<option value="AX">MTS</option>
-																</select>
-															</div>	
-														</div>
-														
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-default prev-step">Previous</button></li>
-														<li><button type="button" class="mob-btn btn btn-primary next-step">Next</button></li>
-													</ul>
-												</div>
-												<div class="tab-pane" role="tabpanel" id="step11">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/usb.png" alt="" />
-														</div>
-														<div class="mobile-right ">
-															<h4>How much to recharge?</h4>
-															<div class="dth-rchge">
-																<input type="text" value="100" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '100';}" required="">	
-															</div>
-														</div>
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-default prev-step">Previous</button></li>
-														<li><button type="button" class="mob-btn btn btn-primary btn-info-full" data-dismiss="modal">Finish</button></li>
-													</ul>
-												</div>
-												<div class="clearfix"></div>
-											</div>
-										</form>
-									</div>
-								</section>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //datacard -->
-			<!-- landline -->
-			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-								<section>
-									<div class="wizard">
-										<div class="wizard-inner">
-											<ul class="nav nav-tabs" role="tablist">
-												<li role="presentation" class="active">
-													<a href="#step12" data-toggle="tab" aria-controls="step12" role="tab" title="Step 12">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-folder-open"></i>
-														</span>
-													</a>
-												</li>
-												<li role="presentation" class="disabled">
-													<a href="#step13" data-toggle="tab" aria-controls="step13" role="tab" title="Step 13">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-pencil"></i>
-														</span>
-													</a>
-												</li>
-												<li role="presentation" class="disabled">
-													<a href="#step14" data-toggle="tab" aria-controls="step14" role="tab" title="Step 14">
-														<span class="round-tab">
-															<i class="glyphicon glyphicon-picture"></i>
-														</span>
-													</a>
-												</li>
-												
-											</ul>
-										</div>
-										<form role="form">
-											<div class="tab-content">
-												<div class="tab-pane active" role="tabpanel" id="step12">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/landline.png" alt="" />
-														</div>
-														<div class="mobile-right">
-															<h4>Pay your landline bill.Which Provider?</h4>
-															<div class="section_room">
-																<select id="country" onchange="change_country(this.value)" class="frm-field required">
-																	<option value="null">Enter Landline Provider Name</option>  
-																	<option value="null">Airtel Landline</option>       
-																	<option value="AX">Bsnl Landline</option>
-																	<option value="AX">MTNL Delhi</option>
-																</select>
-															</div>	
-														</div>
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-primary next-step">Next</button></li>
-													</ul>
-												</div>
-												<div class="tab-pane" role="tabpanel" id="step13">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/landline.png" alt="" />
-														</div>
-														<div class="mobile-right">
-															<h4>Telephone Number</h4>
-															<div class="dth-rchge">
-																<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" required="">
-																<p>Please enter a valid  telephone number with std code.</p>
-															</div>
-														</div>
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-default prev-step">Previous</button></li>
-														<li><button type="button" class="mob-btn btn btn-primary next-step">Next</button></li>
-													</ul>
-												</div>
-												<div class="tab-pane" role="tabpanel" id="step14">
-													<div class="mobile-grids">
-														<div class="mobile-left text-center">
-															<img src="images/landline.png" alt="" />
-														</div>
-														<div class="mobile-right ">
-															<h4>How much did you wish to pay?</h4>
-															<div class="dth-rchge">
-																<input type="text" value="100" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '100';}" required="">	
-																<p>Please enter an amount between Rs.10 and Rs.1000.</p>
-															</div>
-														</div>
-													</div>
-													<ul class="list-inline pull-right">
-														<li><button type="button" class="mob-btn btn btn-default prev-step">Previous</button></li>
-														<li><button type="button" class="mob-btn btn btn-primary btn-info-full" data-dismiss="modal">Finish</button></li>
-													</ul>
-												</div>
-												<div class="clearfix"></div>
-											</div>
-										</form>
-									</div>
-								</section>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //landline -->
-			<!-- login -->
-			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body modal-spa">
-							<div class="login-grids">
-								<div class="login">
-									<div class="login-left">
-										<ul>
-											<li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
-											<li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
-											<li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
-										</ul>
-									</div>
-									<div class="login-right">
-										<form>
-											<h3>Signin with your account </h3>
-											<input type="text" value="Enter your mobile number or Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your mobile number or Email';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
-											<h4><a href="#">Forgot password</a> / <a href="#">Create new password</a></h4>
-											<div class="single-bottom">
-												<input type="checkbox"  id="brand" value="">
-												<label for="brand"><span></span>Remember Me.</label>
-											</div>
-											<input type="submit" value="SIGNIN" >
-										</form>
-									</div>
-									<div class="clearfix"></div>								
-								</div>
-								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //login -->
-			<!-- signup -->
-			<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body modal-spa">
-							<div class="login-grids">
-								<div class="login">
-									<div class="login-left">
-										<ul>
-											<li><a class="fb" href="#"><i></i>Sign in with Facebook</a></li>
-											<li><a class="goog" href="#"><i></i>Sign in with Google</a></li>
-											<li><a class="linkin" href="#"><i></i>Sign in with Linkedin</a></li>
-										</ul>
-									</div>
-									<div class="login-right">
-										<form>
-											<h3>Create your account </h3>
-											<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-											<input type="text" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-											<input type="text" value="Email id" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email id';}" required="">	
-											<input type="password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">	
-											
-											<input type="submit" value="CREATE ACCOUNT" >
-										</form>
-									</div>
-									<div class="clearfix"></div>								
-								</div>
-								<p>By logging in you agree to our <span>Terms and Conditions</span> and <span>Privacy Policy</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //signup -->
-<div class="content-bottom-two">
-		<div class="col-md-6 content-left text-center">
-			<img src="images/bbb5.png" alt="" />
-		</div>
-		<div class="col-md-6 content-right text-center">
-			<img src="images/bbb3.png" alt="" />
-		</div>
-		<div class="clearfix"></div>
-		<div class="btm-pos">
-			<h3>Exclusive Offers</h3>
-			<p> Nam libero tempore, cum soluta 
-			nobis est eligendi optio cumque 
-			nihil impedit quo minus id quod 
-			maxime placeat facere possimus, 
-			omnis voluptas assumenda est. </p>
-		</div>
-</div>
-<div class="footer-top">
-	<div class="container">
-		<div class="foo-grids">
-			<div class="col-md-3 foo-grid">
-				<h3>MOBILE RECHARGES</h3>
-				<ul>
-					<li><a href="#">Airtel</a></li>
-					<li><a href="#">Aircel</a></li>
-					<li><a href="#">BSNL</a></li>
-					<li><a href="#">Idea</a></li>
-					<li><a href="#">MTNL</a></li>
-					<li><a href="#">MTS</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 foo-grid">
-				<h3>DTH RECHARGES</h3>
-				<ul>
-					<li><a href="#">Airtel Digital TV Recharges</a></li>
-					<li><a href="#">Dish TV Recharges</a></li>
-					<li><a href="#">Tata Sky Recharges</a></li>
-					<li><a href="#">Reliance Digital TV Recharges</a></li>
-					<li><a href="#">Sun Direct Recharges</a></li>
-					<li><a href="#">Videocon D2H Recharges</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 foo-grid">
-				<h3>DATACARD RECHARGES</h3>
-				<ul>
-					<li><a href="#">Airtel 2G Service</a></li>
-					<li><a href="#">Aircel 2G Service</a></li>
-					<li><a href="#">BSNL 2G Service</a></li>
-					<li><a href="#">MTS MBlaze Recharges</a></li>
-					<li><a href="#">Tata Photon Plus Recharges</a></li>
-					<li><a href="#">Reliance NetConnect Recharges</a></li>
-				</ul>
-			</div>
-			<div class="col-md-3 foo-grid">
-				<h3>PAYMENT OPTIONS</h3>
-				<ul>
-					<li>Credit Cards</li>
-					<li>Debit Cards</li>
-					<li>Any Visa Debit Card (VBV)</li>
-					<li>Direct Bank Debits</li>
-					<li>Cash Cards</li>
-				</ul>
-			</div>
-			<div class="clearfix"></div>
-		</div>
-	</div>	
-</div>
-
-<div class="footer">
-	<div class="container">
-		<h2><a href="index.html">Easy Recharge</a></h2>
-		<p>© 2016 Easy Recharge. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts</a></p>
-		<ul>
-			<li><a class="face1" href="#"></a></li>
-			<li><a class="face2"href="#"></a></li>
-			<li><a class="face3" href="#"></a></li>
-			<li><a class="face4" href="#"></a></li>
-		</ul>
-	</div>
-</div>
-<!-- for bootstrap working -->
-		<script src="js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
+	<!-- pop-up-box -->
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	    <script>
+			$(document).ready(function() {
+				$('.popup-top-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+				});																							
+			}); 
+		</script>
+<!--//pop-up-box -->
+ <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>

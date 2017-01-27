@@ -1,56 +1,318 @@
-
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Travel Hunt a Mobile App Flat Bootstrap Responsive Website Template | Home :: W3layouts</title> 
-<!-- For-Mobile-Apps-and-Meta-Tags -->
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Travel Hunt Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, SmartPhone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- //For-Mobile-Apps-and-Meta-Tags -->
-<!-- Custom Theme files -->
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">  
-<!-- //Custom Theme files -->
-<!-- js -->
-<script src="js/jquery-2.2.3.min.js"></script> 
-<!-- //js -->
-<!-- web-fonts -->  
-<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-<!-- //web-fonts --> 
+  <title>EGS</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="css/flat-admin.css">
+
+  <!-- Theme -->
+  <link rel="stylesheet" type="text/css" href="css/theme/blue-sky.css">
+  <link rel="stylesheet" type="text/css" href="css/theme/blue.css">
+  <link rel="stylesheet" type="text/css" href="css/theme/red.css">
+  <link rel="stylesheet" type="text/css" href="css/theme/yellow.css">
+
 </head>
 <body>
-	<div class="main-row">
-		<h1>T<span>r</span>a<span>v</span>e<span>l </span> <span>H</span>u<span>n</span>t</h1>
-		  
-				<div class="main_frame second">
-				<div class="main_frame">
-					<iframe class="frame-border" src="main.html" frameborder="0"></iframe>
-				</div>
-			</div>
-	</div>
-	<div class="copy-right">
-		<p>&copy; 2016 Travel Hunt . All Rights Reserved | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
-	</div>
-	<script src="js/jquery.nicescroll.min.js"></script> 
-	<script>
-	  $(document).ready(function() {
-	  
-		var nice = $("html").niceScroll();  // The document page (body)
-		
-		$("#div1").html($("#div1").html()+' '+nice.version);
-		
-		$("#boxscroll").niceScroll(); // First scrollable DIV
-		
-	  });
-	</script>
+  <div class="app app-default">
+
+<aside class="app-sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <a class="sidebar-brand" href="#"><span class="highlight">EGS</span> APP</a>
+    <button type="button" class="sidebar-toggle">
+      <i class="fa fa-times"></i>
+    </button>
+  </div>
+  <div class="sidebar-menu">
+    <ul class="sidebar-nav">
+      <li class="@@menu.messaging">
+        <a href="job.html">
+          <div class="icon">
+            <i class="fa fa-briefcase" aria-hidden="true"></i>
+          </div>
+          <div class="title">Job</div>
+        </a>
+      </li>
+      <li class="@@menu.messaging ">
+        <a href="news.html">
+          <div class="icon">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+          </div>
+          <div class="title">News</div>
+        </a>
+      </li>
+       <li class="@@menu.messaging">
+        <a href="#" onclick="shop()">
+          <div class="icon">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>
+          </div>
+          <div class="title">Shopping </div>
+        </a>
+      </li>
+  <li class="@@menu.messaging">
+        <a href="offer.html">
+          <div class="icon">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </div>
+          <div class="title">Offers </div>
+        </a>
+      </li>
+     
+      <li class="@@menu.messaging">
+        <a href="#">
+          <div class="icon">
+            <i class="fa fa-smile-o" aria-hidden="true"></i>
+          </div>
+          <div class="title">Jokes </div>
+        </a>
+      </li>
+       <li class="@@menu.messaging">
+        <a href="#">
+          <div class="icon">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+          </div>
+          <div class="title">Shayari </div>
+        </a>
+      </li>
+       <li class="@@menu.messaging">
+        <a href="#">
+          <div class="icon">
+            <i class="fa fa-book" aria-hidden="true"></i>
+          </div>
+          <div class="title">About US </div>
+        </a>
+      </li>
+       <li class="@@menu.messaging">
+        <a href="#">
+          <div class="icon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+          <div class="title">Contact </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="sidebar-footer">
+    <ul class="menu">
+      <li>
+        <a href="/" class="dropdown-toggle" data-toggle="dropdown">
+          <i class="fa fa-cogs" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li><a href="#"><span class="flag-icon flag-icon-th flag-icon-squared"></span></a></li>
+    </ul>
+  </div>
+</aside>
+
+<script type="text/ng-template" id="sidebar-dropdown.tpl.html">
+  <div class="dropdown-background">
+    <div class="bg"></div>
+  </div>
+  <div class="dropdown-container">
+    {{list}}
+  </div>
+</script>
+<div class="app-container">
+
+  <nav class="navbar navbar-default" id="navbar">
+  <div class="container-fluid">
+    <div class="navbar-collapse collapse in">
+      <ul class="nav navbar-nav navbar-mobile">
+        <li>
+          <button type="button" class="sidebar-toggle">
+            <i class="fa fa-bars"></i>
+          </button>
+        </li>
+        <li class="logo">
+          <a class="navbar-brand" href="#"><img class="profile-img" src="images/android-logo copy.png"></a>
+        </li>
+        <li>
+          <button type="button" class="navbar-toggle">
+            <img class="profile-img" src="images/cropped-e-gram240x240.png">
+          </button>
+        </li>
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+
+       
+        <li class="dropdown profile">
+          <a href="/html/pages/profile.html" class="dropdown-toggle"  data-toggle="dropdown">
+            <img class="profile-img" src="images/cropped-e-gram240x240.png">
+            <div class="title">Profile</div>
+          </a>
+          <div class="dropdown-menu">
+            <div class="profile-info">
+              <h4 class="username">EGS</h4>
+            </div>
+            <ul class="action">
+              <li>
+                <a href="#">
+                  Profile
+                </a>
+              </li>
+             
+             
+              <li>
+                <a href="#">
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <a class="card card-banner card-green-light">
+  <div class="card-body">
+    <i class="icon fa fa-briefcase fa-4x"></i>
+    <div class="content">
+      <div class="title">JOBS</div>
+      <div class="value"><span class="sign"></span>420</div>
+    </div>
+  </div>
+</a>
+
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <a class="card card-banner card-blue-light">
+  <div class="card-body">
+    <i class="icon fa fa-newspaper-o fa-4x"></i>
+    <div class="content">
+      <div class="title">NEWS</div>
+      <div class="value"><span class="sign"></span>2453</div>
+    </div>
+  </div>
+</a>
+
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <a class="card card-banner card-yellow-light">
+  <div class="card-body">
+    <i class="icon fa fa-calendar fa-4x"></i>
+    <div class="content">
+      <div class="title">OFFER</div>
+      <div class="value"><span class="sign"></span>50</div>
+    </div>
+  </div>
+</a>
+
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+      <a class="card card-banner card-blue-light">
+  <div class="card-body">
+    <i class="icon fa fa-smile-o fa-4x"></i>
+    <div class="content">
+      <div class="title">JOCKS</div>
+      <div class="value"><span class="sign"></span>50</div>
+    </div>
+  </div>
+</a>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="card card-mini">
+      <div class="card-header">
+        <div class="card-title">Lastast Job</div>
+        <ul class="card-action">
+          <li>
+            <a href="/">
+              <i class="fa fa-refresh"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body no-padding table-responsive">
+        <table class="table card-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th class="right">Type</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MicroSD 64Gb</td>
+              <td class="right">12</td>
+              <td><span class="badge badge-success badge-icon"><i class="fa fa-check" aria-hidden="true"></i><span>Complete</span></span></td>
+            </tr>
+            <tr>
+              <td>MiniPC i5</td>
+              <td class="right">5</td>
+              <td><span class="badge badge-warning badge-icon"><i class="fa fa-clock-o" aria-hidden="true"></i><span>Pending</span></span></td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+  <footer class="app-footer"> 
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="footer-copyright">
+        Copyright © 2017 E-gramsuvidha Co.Ltd.
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+  </div>
+  
+  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+  <script type="text/javascript" src="js/vendor.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript">
+function shop()
+{
+   var url = 'http://www.egramsuvidha.com/';
+   var target = '_self';
+   var options = 'location=yes,closebuttoncaption=Done'
+   var ref = cordova.InAppBrowser.open(url, target, options);
+console.log(url);
+   ref.addEventListener('loadstart', loadstartCallback);
+   ref.addEventListener('loadstop', loadstopCallback);
+   ref.addEventListener('loadloaderror', loaderrorCallback);
+   ref.addEventListener('exit', exitCallback);
+
+   function loadstartCallback(event) {
+      console.log('Loading started: '  + event.url)
+   }
+
+   function loadstopCallback(event) {
+      ref.insertCSS({file: "inappbrowser.css"});
+      console.log('Loading finished: ' + event.url)
+   }
+
+   function loaderrorCallback(error) {
+      console.log('Loading error: ' + error.message)
+   }
+
+   function exitCallback()
+   {
+    ref.close();
+    document.location.href='job.html';
+   }
+ // window.location.href='';
+}
+</script>
 </body>
 </html>
