@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="css/flat-admin.css">
+
+  <!-- Theme -->
+  <link rel="stylesheet" type="text/css" href="css/theme/blue-sky.css">
+  <link rel="stylesheet" type="text/css" href="css/theme/blue.css">
+  <link rel="stylesheet" type="text/css" href="css/theme/red.css">
+  <link rel="stylesheet" type="text/css" href="css/theme/yellow.css">
+
+</head>
+<body>
+  <div class="app app-default">
+
+<div class="app-container app-login">
+  <div class="flex-center">
+    <div class="app-header"></div>
+    <div class="app-body">
+      <div class="loader-container text-center">
+          <div class="icon">
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+              </div>
+            </div>
+          <div class="title">Logging in...</div>
+      </div>
+      <div class="app-block">
+        
+       
+        <div class="app-form">
+          <div class="form-suggestion">
+            Create an account for free.
+          </div>
+          <form action="#" method="POST">
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">
+                  <i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" placeholder="First Name" aria-describedby="basic-addon1" name="firstname" id="firstname">
+              </div>
+               <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">
+                  <i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" placeholder="Last Name" aria-describedby="basic-addon1" name="lastname" id="lastname">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2">
+                  <i class="fa fa-user" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon2" name="username" id="username">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2">
+                  <i class="fa fa-user" aria-hidden="true"></i></span>
+                <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon2" name="pwd" id="pwd">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon3">
+                  <i class="fa fa-key" aria-hidden="true"></i></span>
+                <input type="number" class="form-control" placeholder="Mobile" aria-describedby="basic-addon3" name="mobile" id="mobile" maxlength="10">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon4">
+                  <i class="fa fa-check" aria-hidden="true"></i></span>
+                <input type="email" class="form-control" placeholder="email" aria-describedby="basic-addon4" name="email" id="email">
+              </div>
+              <div class="text-center">
+                  <input type="button" class="btn btn-success btn-submit" value="Register" id="save">
+              </div>
+          </form>
+          <!-- <div class="form-line">
+            <div class="title">OR</div>
+          </div> -->
+         <!--  <div class="form-footer">
+            <button type="button" class="btn btn-default btn-sm btn-social __facebook">
+              <div class="info">
+                <i class="icon fa fa-facebook-official" aria-hidden="true"></i>
+                <span class="title">Register w/ Facebook</span>
+              </div>
+            </button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="app-footer">
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+function addlead()
+{
+
+  var firstname=$('#firstname').val();
+  var lastname=$('#lastname').val();
+  var username=$('#username').val();
+  var pwd=$('#pwd').val();
+  var mobile=$('#mobile').val();
+  var email=$('#email').val();
+  
+
+
+  //var leadid= window.localStorage["user_id"];
+  var dataString={
+  'firstname':firstname,
+  'lastname':lastname,
+  'mobile':mobile,
+  'email':email,
+ 'username':username,
+ 'pwd':pwd,
+  'method':'add_lead'
+  };
+  if(firstname=="")
+  {
+     $('#firstname').focus();
+     //$('#firstname').addClass('error1');
+     $('#firstname').css('border-color','red');
+   return false;
+  }
+  else if(lastname=="")
+  {
+     $('#lastname').focus();
+     //$('#lastname').addClass('error1');
+     $('#lastname').css('border-color','red');
+   $('#firstname').css('border-color','green');
+     return false;
+  }
+  else if(username=="")
+  {
+     $('#username').focus();
+     //$('#lastname').addClass('error1');
+     $('#username').css('border-color','red');
+   $('#lastname').css('border-color','green');
+     return false;
+  }
+   else if(pwd=="")
+  {
+     $('#pwd').focus();
+     //$('#lastname').addClass('error1');
+     $('#pwd').css('border-color','red');
+   $('#username').css('border-color','green');
+     return false;
+  }
+  else if(email=="")
+  {
+     $('#email').focus();
+     //$('#lastname').addClass('error1');
+     $('#email').css('border-color','red');
+   $('#pwd').css('border-color','green');
+     return false;
+  }
+  else if(mobile=="")
+  {
+     $('#mobile').focus();
+   
+     //$('#lastname').addClass('error1');
+     $('#mobile').css('border-color','red');
+   $('#email').css('border-color','green');
+  
+     return false;
+  }
+
+
+  else
+  {
+   $('#email').css('border-color','green');
+  console.log(dataString);
+  $.ajax({
+      type:'POST',
+      url:'http://www.egramsuvidha.in/egs_app/api.php',
+      data:dataString,
+      success:function(data,status){
+      if(data=='1')
+      {
+      document.location.href='login.html';
+      }
+      else
+      {
+        alert('Invalid');
+      }
+      
+  
+      }
+    
+    });
+  }
+  //console.log(dataString);
+}
+</script>
+<script>
+$(document).ready(function(){
+
+$('#save').click(function(){
+  addlead();
+  
+});
+});
+</script>
+</body>
+</html>

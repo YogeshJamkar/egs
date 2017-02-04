@@ -20,7 +20,7 @@
 
 <aside class="app-sidebar" id="sidebar">
   <div class="sidebar-header">
-    <a class="sidebar-brand" href="index.html"><span class="highlight">EGS</span> APP</a>
+    <a class="sidebar-brand" href="#"><span class="highlight">EGS</span> APP</a>
     <button type="button" class="sidebar-toggle">
       <i class="fa fa-times"></i>
     </button>
@@ -35,7 +35,7 @@
           <div class="title">Job</div>
         </a>
       </li>
-      <li class="active">
+      <li class="@@menu.messaging ">
         <a href="news.html">
           <div class="icon">
             <i class="fa fa-newspaper-o" aria-hidden="true"></i>
@@ -52,7 +52,7 @@
         </a>
       </li>
   <li class="@@menu.messaging">
-        <a href="#">
+        <a href="offer.html">
           <div class="icon">
             <i class="fa fa-calendar" aria-hidden="true"></i>
           </div>
@@ -60,7 +60,7 @@
         </a>
       </li>
      
-      <li class="@@menu.messaging">
+      <li class="">
         <a href="joke.html">
           <div class="icon">
             <i class="fa fa-smile-o" aria-hidden="true"></i>
@@ -68,7 +68,7 @@
           <div class="title">Jokes </div>
         </a>
       </li>
-       <li class="@@menu.messaging">
+       <li class="active">
         <a href="shayari.html">
           <div class="icon">
             <i class="fa fa-heart" aria-hidden="true"></i>
@@ -90,6 +90,14 @@
             <i class="fa fa-envelope" aria-hidden="true"></i>
           </div>
           <div class="title">Contact </div>
+        </a>
+      </li>
+       <li class="@@menu.messaging">
+        <a href="#" id="logout">
+          <div class="icon">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+          <div class="title">Logout </div>
         </a>
       </li>
     </ul>
@@ -126,7 +134,7 @@
           </button>
         </li>
         <li class="logo">
-          <a class="navbar-brand" href="news.html">NEWS</a>
+          <a class="navbar-brand" href="#">SHAYARI</a>
         </li>
         <li>
           <button type="button" class="navbar-toggle">
@@ -149,14 +157,12 @@
             </div>
             <ul class="action">
               <li>
-                <a href="#">
+                <a href="#" id="logout">
                   Profile
                 </a>
               </li>
-             
-             
               <li>
-                <a href="#">
+                <a href="#" id="logout">
                   Logout
                 </a>
               </li>
@@ -182,121 +188,46 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">ADD NEWS</h4>
+            <h4 class="modal-title">ADD SHAYARI</h4>
           </div>
           <div class="modal-body">
               <div class="col-md-6">
    
-    <form>
+    
     <div class="input-group">
       <span class="input-group-addon" id="basic-addon1">
         <i class="fa fa-user" aria-hidden="true"></i></span>
-      <input type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1" required>
+      <input type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1" required name="title" id="title">
     </div>
      <div class="input-group">
       <span class="input-group-addon" id="basic-addon1">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-      <textarea name="name" rows="3" class="form-control" placeholder="Description"></textarea>
+        <i class="fa fa-male" aria-hidden="true"></i></span>
+      <textarea type="text" class="form-control" placeholder="Posission" aria-describedby="basic-addon1" required name="description" id="description"></textarea>
     </div>
-    <div class="input-group">
-      <span class="input-group-addon" id="basic-addon1">
-        <i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
-      <input type="file" class="form-control" placeholder="upload" aria-describedby="basic-addon1" required>
-    </div>
-    
+
   
   </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">CLOSE</button>
-            <button type="submit" class="btn btn-sm btn-success">SAVE</button>
+            <button type="submit" class="btn btn-sm btn-success" id="shayari">SAVE</button>
           </div>
-        </form>
         </div>
       </div>
     </div>
 
 
 <div class="row">
-</div>
-
-  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-      <div class="card-body no-padding tab-content">
-          <div role="tabpanel" class="tab-pane active no-padding" id="tab1">
-            <div class="search-result">
-              <ul class="result">
-                <li>
-                  <div class="img">
-                    <img src="images/01.png" />
-                  </div>
-                  <div class="info">
-                    <div class="title"><a href="#"><span class="highlight">Macbook Air</span> 2014</a></div>
-                    <div class="description" align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="img">
-                    <img src="images/01.png" />
-                  </div>
-                  <div class="info">
-                    <div class="title"><a href="#"><span class="highlight">Macbook Air</span> 2012</a></div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="info">
-                    <div class="title"><a href="#">Battery Replacement for <span class="highlight">Macbook Air</span></a></div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="info">
-                    <div class="title"><a href="#"><span class="highlight">Macbook Air</span> Assessories</a></div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</div>
-                  </div>
-                </li>
-              </ul>
-              <div class="footer">
-                <ul class="pagination">
-                  <li>
-                    <a href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li><a href="#">1</a></li>
-                  <li class="active"><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                  <li>
-                    <a href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          
-        </div>
+      <div class="col-md-12 card_d">
+       
+      
+     
     </div>
-  </div>
-
-
-</div>
-  <footer class="app-footer"> 
-  <div class="row">
-    <div class="col-xs-12">
-      <div class="footer-copyright">
-   
-      </div>
-    </div>
-  </div>
-</footer>
 </div>
 
   </div>
-   <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
   <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript">
@@ -328,10 +259,133 @@ console.log(url);
    function exitCallback()
    {
     ref.close();
-    document.location.href='job.html';
+    document.location.href='index.html';
    }
  // window.location.href='';
 }
 </script>
+<script>
+$(document).ready(function(){
+
+
+$("#logout").click(function(){
+window.localStorage.removeItem("user_name");
+    
+  window.localStorage.removeItem("user_id");
+   document.location.href='login.html'; 
+
+});
+
+var user = window.localStorage["user_name"];
+  if(user=="" || !user)
+  {
+      document.location.href='login.html';
+  }
+  else
+  {
+
+      //document.location.href='login.html';
+  }
+})
+
+</script>
+<script>
+function addshayari()
+{
+
+  var title=$('#title').val();
+  var description=$('#description').val();
+   //var leadid= window.localStorage["user_id"];
+  var dataString={
+  'title':title,
+  'description':description,
+   'method':'add_shayari'
+  };
+  console.log(dataString);
+  if(title=="")
+  {
+     $('#title').focus();
+     //$('#firstname').addClass('error1');
+     $('#title').css('border-color','red');
+   return false;
+  }
+  else if(description=="")
+  {
+     $('#description').focus();
+     //$('#lastname').addClass('error1');
+     $('#description').css('border-color','red');
+   $('#title').css('border-color','green');
+     return false;
+  }
+
+  else
+  {
+   $('#description').css('border-color','green');
+  console.log(dataString);
+  $.ajax({
+      type:'POST',
+      url:'http://www.egramsuvidha.in/egs_app/api.php',
+      data:dataString,
+      success:function(data,status){
+      if(data=='1')
+      {
+        alert('Added successfully');
+      document.location.href='shayari.html';
+      }
+      else
+      {
+        alert('Invalid');
+      }
+      
+  
+      }
+    
+    });
+  }
+  //console.log(dataString);
+}
+</script>
+
+
+<script>
+$(document).ready(function(){
+
+$('#shayari').click(function(){
+
+  addshayari();
+  
+});
+
+  
+  var dataString={'method':'getshayari'};
+$.ajax({
+      type:'POST',
+      url:'http://www.egramsuvidha.in/egs_app/api.php',
+      //url:'http://www.bramhodyogexpo.in/RE_web_api/api.php',
+      data:dataString,
+      success:function(data,status){
+       var json = $.parseJSON(data);
+       console.log(json);
+       //return false;
+             $.each(json,function(inx,val){
+        $('.card_d').append('<div class="card "><div class="card-header"><div class="card-title">'+val.title+'</div><ul class="card-action">'+
+           '<li class="dropdown"><a href="/" class="dropdown-toggle" data-toggle="dropdown">'+
+           '<i class="fa fa-cogs" aria-hidden="true"></i></a><ul class="dropdown-menu">'+
+                '<li><a href="#">Action 1</a></li>'+
+                '<li><a href="#">Action 2</a></li>'+
+                '<li><a href="#">Action 3</a></li>'+
+              '</ul></li></ul></div><div class="card-body">'+ val.description +'</div></div><br/>'
+        
+        );
+      // console.log(val.En_id);
+       })
+      
+      }
+    
+    });
+
+});
+</script>
+
 </body>
 </html>
