@@ -187,21 +187,21 @@
           <div class="modal-body">
               <div class="col-md-6">
    
-    <form>
+    <form id="addnews" action="#" method="post" enctype="multipart/form-data">
     <div class="input-group">
       <span class="input-group-addon" id="basic-addon1">
         <i class="fa fa-user" aria-hidden="true"></i></span>
-      <input type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1" required>
+      <input type="text" class="form-control" placeholder="Title" aria-describedby="basic-addon1" required name="title" id="title">
     </div>
      <div class="input-group">
       <span class="input-group-addon" id="basic-addon1">
         <i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-      <textarea name="name" rows="3" class="form-control" placeholder="Description"></textarea>
+      <textarea name="description" id="description" rows="3" class="form-control" placeholder="Description"></textarea>
     </div>
     <div class="input-group">
       <span class="input-group-addon" id="basic-addon1">
         <i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
-      <input type="file" class="form-control" placeholder="upload" aria-describedby="basic-addon1" required>
+      <input type="file" class="form-control" name="pic" id="pic" placeholder="upload" aria-describedby="basic-addon1" required>
     </div>
     
   
@@ -209,7 +209,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-sm btn-default" data-dismiss="modal">CLOSE</button>
-            <button type="submit" class="btn btn-sm btn-success">SAVE</button>
+            <button type="button" class="btn btn-sm btn-success" id="news">SAVE</button>
           </div>
         </form>
         </div>
@@ -296,6 +296,7 @@
 </div>
 
   </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
   <script type="text/javascript" src="js/vendor.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
@@ -332,6 +333,139 @@ console.log(url);
    }
  // window.location.href='';
 }
+</script>
+<script>
+$(document).ready(function(){
+
+
+$("#logout").click(function(){
+window.localStorage.removeItem("user_name");
+    
+  window.localStorage.removeItem("user_id");
+   document.location.href='login.html'; 
+
+});
+
+var user = window.localStorage["user_name"];
+  if(user=="" || !user)
+  {
+      document.location.href='login.html';
+  }
+  else
+  {
+
+      //document.location.href='login.html';
+  }
+})
+
+</script>
+
+<script>
+function send_Mail()
+{
+
+
+    var file_data = $("#pic").prop("files")[0];   
+    var form_data = new FormData(this);                  
+    
+  var title=$('#title').val();
+  var description=$('#description').val();
+  var pic=$('#pic').val();
+ 
+   
+ 
+
+  form_data.append('title', title); 
+  form_data.append('description', description); 
+  form_data.append('file', file_data);
+     
+     //var dataString = JSON.stringify(form_data);
+     console.log(form_data); 
+  if(title=="")
+  {
+     $('#title').focus();
+     //$('#firstname').addClass('error1');
+     $('#title').css('border-color','red');
+   return false;
+  }
+  else if(description=="")
+  {
+     $('#description').focus();
+     //$('#lastname').addClass('error1');
+     $('#description').css('border-color','red');
+   $('#title').css('border-color','green');
+     return false;
+  }
+  else if(pic=="")
+  {
+     $('#pic').focus();
+     //$('#lastname').addClass('error1');
+     $('#pic').css('border-color','red');
+   $('#description').css('border-color','green');
+     return false;
+  }
+  
+  else
+  {
+   $('#pic').css('border-color','green');
+  //console.log(dataString);
+   $.ajax({
+      type:'POST',
+      url:'http://www.egramsuvidha.in/egs_app/api.php',
+       dataType: 'text',  // what to expect back from the PHP script, if anything
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+      data:form_data,
+      success:function(data,status){
+      console.log(data);
+      
+      
+  
+      }
+    
+    });
+  }
+  //console.log(dataString);
+}
+</script>
+<script>
+$(document).ready(function(){
+
+$('#news').click(function(){
+  alert('tet')
+  send_Mail();
+  
+});
+
+  
+//   var dataString={'method':'getnews'};
+// $.ajax({
+//       type:'POST',
+//       url:'http://www.egramsuvidha.in/egs_app/api.php',
+//       //url:'http://www.bramhodyogexpo.in/RE_web_api/api.php',
+//       data:dataString,
+//       success:function(data,status){
+//        var json = $.parseJSON(data);
+//        console.log(json);
+//        //return false;
+//              $.each(json,function(inx,val){
+//         $('#job_details').append(
+//         '<tr><td class="right">'+val.title+'</a></td>'+
+//         '<td class="right">'+val.possion+'</td>'+
+//         '<td class="right">'+val.company+'</td>'+
+//         '<td class="right">'+val.education+'</td>'+
+//         '<td><span class="badge badge-success badge-icon"><i class="fa fa-check" aria-hidden="true"></i><span>Complete</span></span></td></tr>'
+        
+//         );
+//       // console.log(val.En_id);
+//        })
+      
+//       }
+    
+//     });
+
+});
 </script>
 </body>
 </html>
