@@ -85,12 +85,15 @@
         </a>
       </li>
        <li class="@@menu.messaging">
-        <a href="contact">
+        <a href="contact.html">
           <div class="icon">
             <i class="fa fa-envelope" aria-hidden="true"></i>
           </div>
           <div class="title">Contact </div>
         </a>
+      </li>
+       <li class="@@menu.messaging title1">
+        
       </li>
     </ul>
   </div>
@@ -365,25 +368,51 @@ console.log(url);
 $(document).ready(function(){
 
 
-$("#logout").click(function(){
-window.localStorage.removeItem("user_name");
-    
-  window.localStorage.removeItem("user_id");
-   document.location.href='login.html'; 
 
-});
 
+// var user = window.localStorage["user_name"];
+//   if(user=="" || !user)
+//   {
+//       document.location.href='login.html';
+//   }
+//   else
+//   {
+
+//       //document.location.href='login.html';
+//   }
 var user = window.localStorage["user_name"];
   if(user=="" || !user)
-  {
-      document.location.href='login.html';
+{
+  $('.title1').html('<a href="login.html" id=""><div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>'+
+    '</div><div class="title title"> Login</div></a>');
   }
   else
   {
 
-      //document.location.href='login.html';
+      $('.title1').html('<a href="#" id="logout"><div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i> </div>'+
+        '<div class="title title">Logout </div> </a>');
   }
+
+  var role = window.localStorage["role"];
+  if(role=='A')
+  {
+    $('#help-actions').show();
+  }
+  else
+  {
+    $('#help-actions').hide();
+  }
+
+  $("#logout").click(function(){
+window.localStorage.removeItem("user_name");
+    
+  window.localStorage.removeItem("user_id");
+  window.localStorage.removeItem("role");
+   document.location.href='index.html'; 
+
+});
 })
+//})
 
 </script>
 

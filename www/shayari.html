@@ -92,13 +92,8 @@
           <div class="title">Contact </div>
         </a>
       </li>
-       <li class="@@menu.messaging">
-        <a href="#" id="logout">
-          <div class="icon">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-          </div>
-          <div class="title">Logout </div>
-        </a>
+       <li class="@@menu.messaging title1">
+        
       </li>
     </ul>
   </div>
@@ -268,25 +263,43 @@ console.log(url);
 $(document).ready(function(){
 
 
-$("#logout").click(function(){
-window.localStorage.removeItem("user_name");
-    
-  window.localStorage.removeItem("user_id");
-   document.location.href='login.html'; 
-
-});
 
 var user = window.localStorage["user_name"];
   if(user=="" || !user)
-  {
-      document.location.href='login.html';
+{
+  $('.title1').html('<a href="login.html" id=""><div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>'+
+    '</div><div class="title title"> Login</div></a>');
   }
   else
   {
 
-      //document.location.href='login.html';
+      $('.title1').html('<a href="#" id="logout"><div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i> </div>'+
+        '<div class="title title">Logout </div> </a>');
+
   }
+
+  var role = window.localStorage["role"];
+  if(role=='A')
+  {
+    $('#help-actions').show();
+  }
+  else
+  {
+    $('#help-actions').hide();
+  }
+
+$("#logout").click(function(){
+window.localStorage.removeItem("user_name");
+    
+  window.localStorage.removeItem("user_id");
+  window.localStorage.removeItem("role");
+   document.location.href='index.html'; 
+
+});
 })
+
+
+
 
 </script>
 <script>
@@ -371,9 +384,8 @@ $.ajax({
         $('.card_d').append('<div class="card "><div class="card-header"><div class="card-title">'+val.title+'</div><ul class="card-action">'+
            '<li class="dropdown"><a href="/" class="dropdown-toggle" data-toggle="dropdown">'+
            '<i class="fa fa-cogs" aria-hidden="true"></i></a><ul class="dropdown-menu">'+
-                '<li><a href="#">Action 1</a></li>'+
-                '<li><a href="#">Action 2</a></li>'+
-                '<li><a href="#">Action 3</a></li>'+
+                '<li><a href="#" onclick=share1("'+val.description+'")>Share</a></li>'+
+                
               '</ul></li></ul></div><div class="card-body">'+ val.description +'</div></div><br/>'
         
         );
@@ -386,6 +398,12 @@ $.ajax({
 
 });
 </script>
-
+<script type="text/javascript">
+ 
+function share1 (id) {
+  console.log(id);
+  window.plugins.socialsharing.share(id,null,null,'http://www.egramsuvidha.com/');
+}
+</script>
 </body>
 </html>

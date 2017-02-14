@@ -85,20 +85,15 @@
         </a>
       </li>
        <li class="@@menu.messaging">
-        <a href="#">
+        <a href="contact.html">
           <div class="icon">
             <i class="fa fa-envelope" aria-hidden="true"></i>
           </div>
           <div class="title">Contact </div>
         </a>
       </li>
-       <li class="@@menu.messaging">
-        <a href="#" id="logout">
-          <div class="icon">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-          </div>
-          <div class="title">Logout </div>
-        </a>
+       <li class="@@menu.messaging title1">
+        
       </li>
     </ul>
   </div>
@@ -136,9 +131,10 @@
         <li class="logo">
           <a class="navbar-brand" href="#">JOKES</a>
         </li>
+      
         <li>
-          <button type="button" class="navbar-toggle">
-            <img class="profile-img" src="images/cropped-e-gram240x240.png">
+          <button type="button" class="navbar-toggle test">
+            <!-- <img class="profile-img" src="images/cropped-e-gram240x240.png"> -->
           </button>
         </li>
       </ul>
@@ -219,9 +215,9 @@
 
 <div class="row">
       <div class="col-md-12 card_d">
-       
-      
-     
+
+
+
     </div>
 </div>
 
@@ -272,20 +268,45 @@ $("#logout").click(function(){
 window.localStorage.removeItem("user_name");
     
   window.localStorage.removeItem("user_id");
-   document.location.href='login.html'; 
+  window.localStorage.removeItem("role");
+   document.location.href='index.html'; 
 
 });
 
 var user = window.localStorage["user_name"];
   if(user=="" || !user)
-  {
-      document.location.href='login.html';
+{
+  $('.title1').html('<a href="login.html" id=""><div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>'+
+    '</div><div class="title title"> Login</div></a>');
+  $('.test').html('<a href="login.html" id=""><div class="icon"><i class="fa fa-user" aria-hidden="true"></i>'+
+    '</div><div class="title title"> </div></a>');
   }
   else
   {
 
-      //document.location.href='login.html';
+      $('.title1').html('<a href="#" id="logout"><div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i> </div>'+
+        '<div class="title title">Logout</div> </a>');
+      $('.test').html("<span>"+user+"</span>");
   }
+
+  var role = window.localStorage["role"];
+  if(role=='A')
+  {
+    $('#help-actions').show();
+  }
+  else
+  {
+    $('#help-actions').hide();
+  }
+
+$("#logout").click(function(){
+window.localStorage.removeItem("user_name");
+    
+  window.localStorage.removeItem("user_id");
+  window.localStorage.removeItem("role");
+   document.location.href='index.html'; 
+
+});
 })
 
 </script>
@@ -370,15 +391,11 @@ $.ajax({
              $.each(json,function(inx,val){
         $('.card_d').append('<div class="card "><div class="card-header"><div class="card-title">'+val.title+'</div><ul class="card-action">'+
            '<li class="dropdown"><a href="/" class="dropdown-toggle" data-toggle="dropdown">'+
-           '<i class="fa fa-cogs" aria-hidden="true"></i></a><ul class="dropdown-menu">'+
-                '<li><a href="#">Action 1</a></li>'+
-                '<li><a href="#">Action 2</a></li>'+
-                '<li><a href="#">Action 3</a></li>'+
-              '</ul></li></ul></div><div class="card-body">'+ val.description +'</div></div><br/>'
-        
-        );
-      // console.log(val.En_id);
-       })
+           '<i class="fa fa-share-alt" aria-hidden="true"></i></a><ul class="dropdown-menu">'+
+                '<li><a href="#" onclick=share1("'+val.description+'")>Share</a></li>'+
+               
+              '</ul></li></ul></div><div class="card-body">'+ val.description +'</div></div><br/>');
+               });
       
       }
     
@@ -386,6 +403,12 @@ $.ajax({
 
 });
 </script>
-
+<script type="text/javascript">
+ 
+function share1 (id) {
+  console.log(id);
+  window.plugins.socialsharing.share(id,null,null,'http://www.egramsuvidha.com/');
+}
+</script>
 </body>
 </html>

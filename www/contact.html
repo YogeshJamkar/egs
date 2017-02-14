@@ -92,13 +92,8 @@
           <div class="title">Contact </div>
         </a>
       </li>
-       <li class="@@menu.messaging">
-        <a href="#" id="logout">
-          <div class="icon">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
-          </div>
-          <div class="title">Logout </div>
-        </a>
+        <li class="@@menu.messaging title1">
+        
       </li>
     </ul>
   </div>
@@ -147,9 +142,9 @@
 
        
         <li class="dropdown profile">
-          <a href="/html/pages/profile.html" class="dropdown-toggle"  data-toggle="dropdown">
-            <img class="profile-img" src="images/cropped-e-gram240x240.png">
-            <div class="title">Profile</div>
+          <a href="#" class="dropdown-toggle"  data-toggle="dropdown">
+            <!-- <img class="profile-img" src="images/cropped-e-gram240x240.png"> -->
+            <div class="title userid"></div>
           </a>
           <div class="dropdown-menu">
             <div class="profile-info">
@@ -157,7 +152,7 @@
             </div>
             <ul class="action">
               <li>
-                <a href="#" id="logout">
+                <a href="#" id="username1">
                   Profile
                 </a>
               </li>
@@ -255,24 +250,37 @@ console.log(url);
 $(document).ready(function(){
 
 
-$("#logout").click(function(){
-window.localStorage.removeItem("user_name");
-    
-  window.localStorage.removeItem("user_id");
-   document.location.href='login.html'; 
-
-});
-
 var user = window.localStorage["user_name"];
   if(user=="" || !user)
-  {
-      document.location.href='login.html';
+{
+  $('.title1').html('<a href="login.html" id=""><div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>'+
+    '</div><div class="title title"> Login</div></a>');
   }
   else
   {
 
-      //document.location.href='login.html';
+      $('.title1').html('<a href="#" id="logout"><div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i> </div>'+
+        '<div class="title title">Logout </div> </a>');
   }
+$("#logout").click(function(){
+window.localStorage.removeItem("user_name");
+    
+  window.localStorage.removeItem("user_id");
+  window.localStorage.removeItem("role");
+   document.location.href='index.html'; 
+
+});
+$('#username1').append(user);
+// var user = window.localStorage["user_name"];
+//   if(user=="" || !user)
+//   {
+//       document.location.href='login.html';
+//   }
+//   else
+//   {
+
+//       //document.location.href='login.html';
+//   }
 })
 
 </script>

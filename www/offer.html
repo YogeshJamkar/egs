@@ -340,5 +340,43 @@ console.log(url);
  // window.location.href='';
 }
 </script>
+<script>
+$(document).ready(function(){
+
+
+var user = window.localStorage["user_name"];
+  if(user=="" || !user)
+{
+  $('.title1').html('<a href="login.html" id=""><div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>'+
+    '</div><div class="title title"> Login</div></a>');
+  }
+  else
+  {
+
+      $('.title1').html('<a href="#" id="logout"><div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i> </div>'+
+        '<div class="title title">Logout </div> </a>');
+  }
+$("#logout").click(function(){
+window.localStorage.removeItem("user_name");
+    
+  window.localStorage.removeItem("user_id");
+  window.localStorage.removeItem("role");
+   document.location.href='index.html'; 
+
+});
+
+// var user = window.localStorage["user_name"];
+//   if(user=="" || !user)
+//   {
+//       document.location.href='login.html';
+//   }
+//   else
+//   {
+
+//       //document.location.href='login.html';
+//   }
+})
+
+</script>
 </body>
 </html>
