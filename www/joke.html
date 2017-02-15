@@ -393,7 +393,7 @@ $.ajax({
            '<li class="dropdown"><a href="/" class="dropdown-toggle" data-toggle="dropdown">'+
            '<i class="fa fa-share-alt" aria-hidden="true"></i></a><ul class="dropdown-menu">'+
                 '<li><a href="#" onclick=share1("'+val.description+'")>Share</a></li>'+
-               
+               '<li><a href="#" onclick=del('+val.id+')>Delete</a></li>'+
               '</ul></li></ul></div><div class="card-body">'+ val.description +'</div></div><br/>');
                });
       
@@ -406,8 +406,27 @@ $.ajax({
 <script type="text/javascript">
  
 function share1 (id) {
-  console.log(id);
+  //console.log(id);
   window.plugins.socialsharing.share(id,null,null,'http://www.egramsuvidha.com/');
+}
+
+function del (id) {
+ // console.log(id);
+  var dataString={'id':id,'method':'delete1'};
+  console.log(dataString);
+ $.ajax({
+      type:'POST',
+      url:'http://www.egramsuvidha.in/egs_app/api.php',
+      //url:'http://www.bramhodyogexpo.in/RE_web_api/api.php',
+      data:dataString,
+      success:function(data,status){
+        if(data==1)
+        {
+          alert('Deleted successfully');
+         document.location.href='joke.html';
+        }
+}
+});
 }
 </script>
 </body>
